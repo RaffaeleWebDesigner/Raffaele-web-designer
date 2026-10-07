@@ -1,389 +1,518 @@
 <!doctype html>
-<html lang="it">
+<html lang="it" class="no-js">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Raffaele Web Designer | Siti moderni per attività locali</title>
-  <meta name="description" content="Siti web moderni, veloci e mobile-first per attività locali. Setup da 49€ + manutenzione 10€/mese. WhatsApp e contatti in primo piano." />
+  <title>Raffaele Ciccarelli · Siti web su misura per la tua attività</title>
+  <meta name="description" content="Creo siti web su commissione per attività locali e professionisti: veloci, moderni e pensati per portarti clienti. Prima bozza in 48–72 ore." />
+  <meta name="theme-color" content="#07070b" />
 
-  <!-- Open Graph / Social preview -->
-  <meta property="og:title" content="Raffaele Web Designer | Siti moderni per attività locali" />
-  <meta property="og:description" content="Siti eleganti e veloci, pensati per farti contattare. Setup 49€ + manutenzione 10€/mese." />
+  <meta property="og:title" content="Raffaele Ciccarelli · Siti web su misura" />
+  <meta property="og:description" content="Siti veloci, moderni e pensati per portarti clienti. Prima bozza in 48–72 ore." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://raffaele-web-designer.netlify.app/" />
-  <meta property="og:image" content="https://raffaele-web-designer.netlify.app/assets/img/og.jpg" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:url" content="https://raffaelewebdesigner.github.io/Raffaele-web-designer/" />
+  <meta property="og:image" content="https://raffaelewebdesigner.github.io/Raffaele-web-designer/assets/img/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://raffaelewebdesigner.github.io/Raffaele-web-designer/" />
 
-  <link rel="icon" href="assets/img/logo.png" type="image/png" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
 </head>
 
 <body>
-  <!-- Top progress bar -->
-  <div class="top-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <a class="skip" href="#main">Vai al contenuto</a>
+  <div class="progress" aria-hidden="true"></div>
 
-  <header class="header" id="siteHeader">
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
     <div class="container nav">
-      <a class="brand" href="#top" aria-label="Vai in cima">
-        <img src="assets/img/logo.png" alt="Raffaele Web Designer logo" class="brand-logo">
-        <div class="brand-stack">
-          <span class="brand-name">Raffaele</span>
-          <span class="brand-sub">Web Designer</span>
-        </div>
+      <a class="brand" href="#top" aria-label="Raffaele Ciccarelli, torna all'inizio">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span class="brand-name">Raffaele<span class="brand-dot">.</span></span>
       </a>
 
-      <nav class="menu" aria-label="Menu principale">
-        <a href="#servizi" class="nav-link">Servizi</a>
-        <a href="#portfolio" class="nav-link">Lavori</a>
-        <a href="#prezzi" class="nav-link">Prezzi</a>
-        <a href="#contatti" class="btn btn--sm">Contattami</a>
+      <nav class="menu" id="menu" aria-label="Menu principale">
+        <a href="#servizi">Servizi</a>
+        <a href="#lavori">Lavori</a>
+        <a href="#metodo">Metodo</a>
+        <a href="#prezzi">Prezzi</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contatti" class="btn btn--sm">Parliamone</a>
       </nav>
 
-      <button class="burger" aria-label="Apri menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <button class="burger" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
       </button>
     </div>
   </header>
 
-  <main id="top">
-    <!-- HERO -->
-    <section class="hero">
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+        <div class="blob blob--3"></div>
+        <div class="grid-lines"></div>
+      </div>
+
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="kicker">
-            <span class="chip">📍 Web designer di zona</span>
-            <span class="chip">⚡ Mobile-first</span>
-            <span class="chip">🧠 Focus contatti</span>
-          </div>
-
-          <h1>
-            Un sito che <span class="grad">sembra premium</span><br/>
-            e ti porta contatti.
-          </h1>
-
-          <p class="lead">
-            Siti moderni, veloci e puliti per attività locali. WhatsApp sempre in evidenza, testi chiari,
-            struttura studiata per convertire. Se serve, ci si può anche vedere di persona.
+          <p class="eyebrow reveal">
+            <span class="live-dot" aria-hidden="true"></span>
+            Disponibile per nuovi progetti
           </p>
 
-          <div class="hero-cta">
-            <a class="btn" href="#contatti">Richiedi un preventivo</a>
-            <a class="btn btn--ghost" href="#" id="whatsappLink" target="_blank" rel="noopener">
-              WhatsApp diretto
+          <h1 class="hero-title reveal">
+            Il sito che fa dire
+            <span class="wow">“wow”</span>
+            ai clienti del tuo
+            <span class="rotator" aria-live="polite">
+              <span class="rotator-word is-active">ristorante.</span>
+              <span class="rotator-word">salone.</span>
+              <span class="rotator-word">studio.</span>
+              <span class="rotator-word">negozio.</span>
+              <span class="rotator-word">B&amp;B.</span>
+            </span>
+          </h1>
+
+          <p class="hero-sub reveal">
+            Progetto e realizzo siti su commissione: veloci, belli da vedere e costruiti
+            per trasformare chi ti visita in chi ti chiama. Prima bozza in <strong>48–72 ore</strong>.
+          </p>
+
+          <div class="hero-cta reveal">
+            <a class="btn btn--glow" href="#contatti">
+              Voglio il mio sito
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost js-whatsapp" href="https://wa.me/393898403642" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="ico-wa"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.4.8 3.2.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+              Scrivimi su WhatsApp
             </a>
           </div>
 
-          <div class="stats">
-            <div class="stat">
-              <div class="stat-big">48–72h</div>
-              <div class="stat-small">bozza iniziale</div>
-            </div>
-            <div class="stat">
-              <div class="stat-big">49€</div>
-              <div class="stat-small">setup</div>
-            </div>
-            <div class="stat">
-              <div class="stat-big">10€</div>
-              <div class="stat-small">manutenzione/mese</div>
-            </div>
-          </div>
-
-          <div class="trustline">
-            <span>✅ Struttura chiara</span>
-            <span>✅ Caricamento rapido</span>
-            <span>✅ CTA visibili</span>
-          </div>
+          <ul class="hero-points reveal" aria-label="Punti di forza">
+            <li><span aria-hidden="true">✓</span> Mobile-first</li>
+            <li><span aria-hidden="true">✓</span> Caricamento rapido</li>
+            <li><span aria-hidden="true">✓</span> Prezzi chiari</li>
+          </ul>
         </div>
 
-        <div class="hero-panel">
-          <div class="panel-glass">
-            <div class="panel-head">
-              <div class="dots"><span></span><span></span><span></span></div>
-              <span class="panel-title">Preview Lavori</span>
-            </div>
-
-            <div class="panel-tabs">
-              <button class="tab active" data-preview="ciccarelli">Ciccarelli</button>
-              <button class="tab" data-preview="sottili">Sottili</button>
-            </div>
-
-            <div class="panel-preview" id="previewArea">
-              <img src="assets/img/ciccarelli.png" alt="Anteprima sito Ciccarelli Agostino" loading="lazy">
-            </div>
-
-            <div class="panel-foot">
-              <span class="mini">Design sobrio, struttura pulita, contatti in primo piano.</span>
-            </div>
+        <!-- Demo interattiva -->
+        <div class="hero-demo reveal" id="demo">
+          <div class="demo-tabs" role="tablist" aria-label="Scegli un settore per vedere un esempio">
+            <button role="tab" class="demo-tab is-active" aria-selected="true" data-theme="food">🍝 Ristorante</button>
+            <button role="tab" class="demo-tab" aria-selected="false" data-theme="beauty">✂️ Salone</button>
+            <button role="tab" class="demo-tab" aria-selected="false" data-theme="gym">🏋️ Palestra</button>
+            <button role="tab" class="demo-tab" aria-selected="false" data-theme="bnb">🌿 B&amp;B</button>
           </div>
 
-          <div class="feature-list">
-            <div class="feature">
-              <span class="f-ic">⚡</span>
-              <div>
-                <div class="f-title">Performance</div>
-                <div class="f-sub">Sito leggero e veloce</div>
+          <div class="browser tilt" data-theme="food">
+            <div class="browser-bar">
+              <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+              <div class="url"><span class="lock" aria-hidden="true">🔒</span><span class="url-text">trattoriadagino.it</span><span class="caret" aria-hidden="true"></span></div>
+            </div>
+
+            <div class="site" aria-live="polite">
+              <div class="site-nav">
+                <span class="site-logo">Da Gino</span>
+                <span class="site-links"><i></i><i></i><i></i></span>
+              </div>
+              <div class="site-hero">
+                <div class="site-hero-text">
+                  <span class="site-kicker">Dal 1987 · Napoli</span>
+                  <span class="site-title">Cucina di casa, come una volta.</span>
+                  <span class="site-btn">Prenota un tavolo</span>
+                </div>
+                <div class="site-hero-art" aria-hidden="true"><span class="site-emoji">🍝</span></div>
+              </div>
+              <div class="site-cards">
+                <div class="site-card"><b>Menù</b><i></i><i></i></div>
+                <div class="site-card"><b>Orari</b><i></i><i></i></div>
+                <div class="site-card"><b>Dove siamo</b><i></i><i></i></div>
               </div>
             </div>
-            <div class="feature">
-              <span class="f-ic">📱</span>
-              <div>
-                <div class="f-title">Mobile-first</div>
-                <div class="f-sub">Perfetto da telefono</div>
-              </div>
-            </div>
-            <div class="feature">
-              <span class="f-ic">🛠️</span>
-              <div>
-                <div class="f-title">Supporto</div>
-                <div class="f-sub">Modifiche rapide</div>
-              </div>
+
+            <div class="toast" aria-hidden="true">
+              <span class="toast-ico">💬</span>
+              <span><b>Nuovo contatto!</b><br><span class="toast-text">“Avete posto stasera per 4?”</span></span>
             </div>
           </div>
+          <p class="demo-caption">Tocca un settore: il sito si ricostruisce in tempo reale. <span class="muted">(Esempio dimostrativo)</span></p>
         </div>
       </div>
 
-      <div class="hero-bg" aria-hidden="true"></div>
+      <a class="scroll-hint" href="#servizi" aria-label="Scorri ai servizi"><span></span></a>
     </section>
 
-    <!-- SERVIZI -->
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Ristoranti</span><span>✦</span><span>Parrucchieri</span><span>✦</span><span>Estetiste</span><span>✦</span><span>Palestre</span><span>✦</span><span>B&amp;B</span><span>✦</span><span>Studi professionali</span><span>✦</span><span>Artigiani</span><span>✦</span><span>Negozi</span><span>✦</span><span>Fotografi</span><span>✦</span><span>Associazioni</span><span>✦</span>
+        <span>Ristoranti</span><span>✦</span><span>Parrucchieri</span><span>✦</span><span>Estetiste</span><span>✦</span><span>Palestre</span><span>✦</span><span>B&amp;B</span><span>✦</span><span>Studi professionali</span><span>✦</span><span>Artigiani</span><span>✦</span><span>Negozi</span><span>✦</span><span>Fotografi</span><span>✦</span><span>Associazioni</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- ============ SERVIZI ============ -->
     <section class="section" id="servizi">
       <div class="container">
-        <div class="section-head">
-          <h2>Servizi</h2>
-          <p>Pacchetti semplici, chiari, orientati al risultato.</p>
+        <div class="section-head reveal">
+          <p class="kicker">Cosa faccio</p>
+          <h2>Non un sito qualsiasi.<br><span class="grad">Il tuo biglietto da visita migliore.</span></h2>
+          <p>Oggi il primo incontro con un cliente avviene sullo schermo di un telefono. In 3 secondi decide se fidarsi di te. Facciamo in modo che dica sì.</p>
         </div>
 
-        <div class="grid-3">
-          <article class="card card--hover">
-            <div class="card-top">
-              <span class="badge">Sito</span>
-              <h3>Sito vetrina</h3>
-            </div>
-            <p>1–5 pagine, layout moderno, testi chiari. Perfetto per iniziare e farsi trovare.</p>
-            <ul class="list">
-              <li>Design scuro elegante</li>
-              <li>Responsive</li>
-              <li>Sezioni “fiducia”</li>
-            </ul>
+        <div class="bento">
+          <article class="tile tile--big spot reveal">
+            <div class="tile-ico" aria-hidden="true">🎨</div>
+            <h3>Design su misura</h3>
+            <p>Niente template visti mille volte. Colori, stile e testi costruiti attorno alla tua attività e ai tuoi clienti.</p>
+            <div class="swatches" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
           </article>
 
-          <article class="card card--hover">
-            <div class="card-top">
-              <span class="badge">Contatti</span>
-              <h3>Ottimizzato per conversione</h3>
-            </div>
-            <p>CTA e flusso pensati per far scrivere subito: WhatsApp e form sempre vicini.</p>
-            <ul class="list">
-              <li>CTA strategiche</li>
-              <li>FAQ anti-dubbi</li>
-              <li>Anteprima social curata</li>
-            </ul>
+          <article class="tile spot reveal">
+            <div class="tile-ico" aria-hidden="true">⚡</div>
+            <h3>Velocissimo</h3>
+            <p>Codice leggero, niente plugin inutili. Si apre al volo anche in 4G.</p>
+            <div class="speed" aria-hidden="true"><div class="speed-bar"></div><span>Performance</span></div>
           </article>
 
-          <article class="card card--hover">
-            <div class="card-top">
-              <span class="badge">Cura</span>
-              <h3>Manutenzione</h3>
-            </div>
-            <p>Backup e piccole modifiche mensili: il sito resta ordinato, aggiornato, credibile.</p>
-            <ul class="list">
-              <li>Backup</li>
-              <li>Testi/foto/link</li>
-              <li>Supporto rapido</li>
-            </ul>
+          <article class="tile spot reveal">
+            <div class="tile-ico" aria-hidden="true">📱</div>
+            <h3>Perfetto da telefono</h3>
+            <p>Progettato prima per lo smartphone, poi per il computer. Come lo usano i tuoi clienti.</p>
+          </article>
+
+          <article class="tile spot reveal">
+            <div class="tile-ico" aria-hidden="true">💬</div>
+            <h3>Pensato per i contatti</h3>
+            <p>WhatsApp, chiamata, mappa e modulo sempre a portata di pollice.</p>
+          </article>
+
+          <article class="tile spot reveal">
+            <div class="tile-ico" aria-hidden="true">🔎</div>
+            <h3>Pronto per Google</h3>
+            <p>Struttura SEO di base, titoli e descrizioni curati, scheda per la condivisione sui social.</p>
+          </article>
+
+          <article class="tile tile--wide spot reveal">
+            <div class="tile-ico" aria-hidden="true">🛠️</div>
+            <h3>Modifiche quando ti servono</h3>
+            <p>Cambi orari, foto o prezzi? Mi scrivi e lo sistemo. Paghi il singolo intervento, senza abbonamenti né vincoli.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- PROCESSO -->
-    <section class="section section--alt" id="processo">
+    <!-- ============ LAVORI ============ -->
+    <section class="section section--alt" id="lavori">
       <div class="container">
-        <div class="section-head">
-          <h2>Come lavoriamo</h2>
-          <p>Tre step. Zero confusione.</p>
+        <div class="section-head reveal">
+          <p class="kicker">Lavori realizzati</p>
+          <h2>Siti veri, online,<br><span class="grad">per attività vere.</span></h2>
+          <p>Alcuni dei progetti che ho realizzato. Clicca e provali tu stesso, anche dal telefono.</p>
         </div>
 
-        <div class="steps">
-          <div class="step">
-            <div class="step-n">1</div>
-            <div class="step-b">
-              <h3>Brief veloce</h3>
-              <p>Mi dici settore, servizi e contatti. Se hai foto/logo, meglio. Altrimenti si parte lo stesso.</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-n">2</div>
-            <div class="step-b">
-              <h3>Bozza + revisione</h3>
-              <p>Ti mando una bozza, fai correzioni, si rifinisce. In 48–72h di solito la vedi già.</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-n">3</div>
-            <div class="step-b">
-              <h3>Online + manutenzione</h3>
-              <p>Pubblicazione, test e poi (se vuoi) manutenzione per tenere tutto aggiornato nel tempo.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="cta-strip">
-          <div>
-            <div class="cta-title">Vuoi un sito che faccia il suo lavoro?</div>
-            <div class="cta-sub">Scrivimi due righe: ti rispondo con un piano semplice.</div>
-          </div>
-          <a class="btn" href="#contatti">Ok, parliamone</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- PORTFOLIO -->
-    <section class="section" id="portfolio">
-      <div class="container">
-        <div class="section-head">
-          <h2>Lavori</h2>
-          <p>Progetti reali, con link diretto.</p>
-        </div>
-
-        <div class="grid-2">
-          <a class="work work--v2" href="https://ciccarelliagostino.netlify.app/" target="_blank" rel="noopener">
-            <div class="work-media">
-              <img src="assets/img/ciccarelli.png" alt="Ciccarelli Agostino - sito web" loading="lazy">
-              <span class="work-pill">Edilizia + Impianti</span>
-            </div>
-            <div class="work-body">
-              <div>
-                <div class="work-title">Ciccarelli Agostino</div>
-                <div class="work-sub">Sito vetrina + contatti, CTA chiare</div>
+        <div class="works">
+          <a class="work reveal" href="https://asdponteaglistolli.it/" target="_blank" rel="noopener">
+            <div class="work-frame">
+              <div class="work-bar" aria-hidden="true"><span class="dots"><span></span><span></span><span></span></span><span class="work-url">asdponteaglistolli.it</span></div>
+              <div class="work-img">
+                <img src="assets/img/lavori/stolli.webp" alt="Anteprima del sito ASD Ponte agli Stolli" width="960" height="600" loading="lazy" decoding="async">
               </div>
-              <span class="work-link">Visita ↗</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-row">
+                <span class="tag">Sport</span>
+                <span class="work-visit">Visita il sito <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+              </div>
+              <h3>ASD Ponte agli Stolli</h3>
+              <p>Sito ufficiale della squadra: classifica, marcatori, calendario, pagelle e countdown alla prossima partita.</p>
             </div>
           </a>
-
-          <a class="work work--v2" href="https://edilcostruzionisottilisrl.netlify.app/" target="_blank" rel="noopener">
-            <div class="work-media">
-              <img src="assets/img/sottili.png" alt="Edil Costruzioni Sottili SRL - sito web" loading="lazy">
-              <span class="work-pill">Impresa Edile</span>
-            </div>
-            <div class="work-body">
-              <div>
-                <div class="work-title">Edil Costruzioni Sottili SRL</div>
-                <div class="work-sub">Sito moderno + richiesta rapida</div>
+          <a class="work reveal" href="https://raffaelewebdesigner.github.io/Ciccarelli-Agostino/" target="_blank" rel="noopener">
+            <div class="work-frame">
+              <div class="work-bar" aria-hidden="true"><span class="dots"><span></span><span></span><span></span></span><span class="work-url">Ciccarelli Agostino</span></div>
+              <div class="work-img">
+                <img src="assets/img/lavori/ciccarelli.webp" alt="Anteprima del sito Ciccarelli Agostino" width="960" height="600" loading="lazy" decoding="async">
               </div>
-              <span class="work-link">Visita ↗</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-row">
+                <span class="tag">Edilizia &amp; impianti</span>
+                <span class="work-visit">Visita il sito <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+              </div>
+              <h3>Ciccarelli Agostino</h3>
+              <p>Ristrutturazioni, impianti elettrici e assistenza fotovoltaico: contatti rapidi e galleria lavori.</p>
+            </div>
+          </a>
+          <a class="work reveal" href="https://raffaelewebdesigner.github.io/Edilcostruzioni-Sottili/" target="_blank" rel="noopener">
+            <div class="work-frame">
+              <div class="work-bar" aria-hidden="true"><span class="dots"><span></span><span></span><span></span></span><span class="work-url">Edilcostruzioni Sottili</span></div>
+              <div class="work-img">
+                <img src="assets/img/lavori/sottili.webp" alt="Anteprima del sito Edilcostruzioni Sottili" width="960" height="600" loading="lazy" decoding="async">
+              </div>
+            </div>
+            <div class="work-meta">
+              <div class="work-row">
+                <span class="tag">Impresa edile</span>
+                <span class="work-visit">Visita il sito <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+              </div>
+              <h3>Edilcostruzioni Sottili</h3>
+              <p>Impresa edile in Valdarno: modulo di preventivo in evidenza e chiamata con un tocco.</p>
+            </div>
+          </a>
+          <a class="work reveal" href="https://raffaelewebdesigner.github.io/AminRottami/" target="_blank" rel="noopener">
+            <div class="work-frame">
+              <div class="work-bar" aria-hidden="true"><span class="dots"><span></span><span></span><span></span></span><span class="work-url">Amin Rottami</span></div>
+              <div class="work-img">
+                <img src="assets/img/lavori/aminrottami.webp" alt="Anteprima del sito Amin Rottami" width="960" height="600" loading="lazy" decoding="async">
+              </div>
+            </div>
+            <div class="work-meta">
+              <div class="work-row">
+                <span class="tag">Servizi</span>
+                <span class="work-visit">Visita il sito <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+              </div>
+              <h3>Amin Rottami</h3>
+              <p>Rottami, sgomberi e traslochi: tutto pensato per richiedere un preventivo su WhatsApp.</p>
             </div>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- PREZZI -->
+    <!-- ============ METODO ============ -->
+    <section class="section" id="metodo">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">Metodo</p>
+          <h2>Dall'idea al sito online<br><span class="grad">in 4 passi semplici.</span></h2>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-n">01</span>
+            <h3>Due chiacchiere</h3>
+            <p>Mi racconti la tua attività, i tuoi clienti e cosa vuoi ottenere. Gratis e senza impegno.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-n">02</span>
+            <h3>Prima bozza</h3>
+            <p>Entro 48–72 ore dal ricevimento dei materiali ti mando un'anteprima navigabile.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-n">03</span>
+            <h3>Rifiniture</h3>
+            <p>Sistemiamo insieme testi, colori e dettagli finché non ti convince.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-n">04</span>
+            <h3>Online!</h3>
+            <p>Pubblico il sito sul tuo dominio e ti consegno tutto: è tuo al 100%.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PREZZI ============ -->
     <section class="section section--alt" id="prezzi">
       <div class="container">
-        <div class="section-head">
-          <h2>Prezzi</h2>
-          <p>Trasparenti. Con limiti chiari. Senza “sorprese creative”.</p>
+        <div class="section-head reveal">
+          <p class="kicker">Prezzi</p>
+          <h2>Prezzi chiari.<br><span class="grad">Zero sorprese.</span></h2>
+          <p>Paghi una volta, il sito è tuo. Niente canoni obbligatori.</p>
         </div>
 
         <div class="pricing">
-          <article class="price-card">
-            <h3>Setup</h3>
-            <div class="price">49€</div>
-            <p class="muted">Perfetto per partire subito.</p>
-            <ul class="list">
-              <li>One-page o mini-sito</li>
-              <li>Design moderno</li>
-              <li>WhatsApp + contatti</li>
-              <li>1 revisione inclusa</li>
+          <article class="price spot reveal">
+            <h3>Essenziale</h3>
+            <p class="price-sub">Per essere online subito, con stile.</p>
+            <div class="price-amount"><span class="from">da</span> 49<span class="cur">€</span></div>
+            <ul class="checks">
+              <li>Sito one-page (fino a 4 sezioni)</li>
+              <li>Design moderno e responsive</li>
+              <li>Pulsante WhatsApp e chiamata</li>
+              <li>Mappa e orari</li>
+              <li>1 giro di revisioni</li>
             </ul>
-            <a class="btn btn--ghost" href="#contatti">Voglio partire</a>
+            <a class="btn btn--ghost btn--block" href="#contatti" data-plan="Essenziale">Scelgo Essenziale</a>
           </article>
 
-          <article class="price-card price-card--featured">
-            <div class="tag">Consigliato</div>
-            <h3>Manutenzione</h3>
-            <div class="price">10€ <span class="per">/mese</span></div>
-            <p class="muted">Per restare online e in ordine.</p>
-            <ul class="list">
-              <li>Backup mensile</li>
-              <li>Fino a 3 micro-modifiche/mese</li>
-              <li>Controllo contatti/CTA</li>
-              <li>Supporto via messaggio</li>
+          <article class="price price--featured spot reveal">
+            <span class="ribbon">Il più scelto</span>
+            <h3>Professionale</h3>
+            <p class="price-sub">Per chi vuole fare colpo davvero.</p>
+            <div class="price-amount"><span class="from">da</span> 149<span class="cur">€</span></div>
+            <ul class="checks">
+              <li>Fino a 5 pagine</li>
+              <li>Design su misura con animazioni</li>
+              <li>Modulo contatti + WhatsApp</li>
+              <li>SEO di base e anteprima social</li>
+              <li>Galleria foto / menù / listino</li>
+              <li>2 giri di revisioni</li>
             </ul>
-            <a class="btn" href="#contatti">Attivala</a>
+            <a class="btn btn--glow btn--block" href="#contatti" data-plan="Professionale">Scelgo Professionale</a>
           </article>
+
+          <article class="price spot reveal">
+            <h3>Modifiche</h3>
+            <p class="price-sub">Quando ti servono, senza abbonamenti.</p>
+            <div class="price-amount"><span class="from">da</span> 10<span class="cur">€</span><span class="per">/intervento</span></div>
+            <ul class="checks">
+              <li>Testi, orari, prezzi</li>
+              <li>Foto e link</li>
+              <li>Piccoli aggiustamenti</li>
+              <li>Preventivo prima di ogni lavoro</li>
+            </ul>
+            <a class="btn btn--ghost btn--block" href="#contatti" data-plan="Modifiche">Chiedi una modifica</a>
+          </article>
+        </div>
+
+        <p class="fine reveal">
+          Dominio e hosting non sono inclusi: sono intestati a te e ti aiuto a sceglierli (spesso costano pochi euro l'anno, a volte sono gratuiti).
+          Prezzi a titolo indicativo: il preventivo definitivo lo concordiamo per iscritto prima di iniziare.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <div class="section-head reveal">
+          <p class="kicker">FAQ</p>
+          <h2>Domande frequenti</h2>
+        </div>
+
+        <div class="faq">
+          <details class="faq-item reveal">
+            <summary>Quanto tempo serve per avere il sito?</summary>
+            <div class="faq-body"><p>La prima bozza arriva in 48–72 ore da quando ricevo i materiali (testi, logo, foto). Di solito il sito è online in circa una settimana, a seconda di quanto rapidamente lavoriamo sulle revisioni.</p></div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Non ho testi né foto. È un problema?</summary>
+            <div class="faq-body"><p>No. Ti aiuto a scrivere i testi partendo da quello che mi racconti e posso usare immagini di qualità con licenza libera, in attesa delle tue foto.</p></div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Come funziona il pagamento?</summary>
+            <div class="faq-body"><p>Prima di iniziare concordiamo per iscritto cosa è incluso, i tempi e il prezzo. Per ogni pagamento ricevi una ricevuta, e si paga con bonifico o altri metodi tracciabili. Trovi i dettagli nella pagina <a href="condizioni.html">condizioni</a>.</p></div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Dominio e hosting chi li paga?</summary>
+            <div class="faq-body"><p>Sono intestati direttamente a te, così il sito resta sempre di tua proprietà. Ti consiglio la soluzione più adatta e ti guido nella configurazione: per un sito vetrina i costi sono spesso molto bassi o nulli.</p></div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Dopo la consegna potrò modificarlo?</summary>
+            <div class="faq-body"><p>Certo. Puoi chiedermi singole modifiche quando ti servono: ti faccio un preventivo e paghi solo l'intervento, senza abbonamenti.</p></div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>Il sito rispetta la privacy (GDPR)?</summary>
+            <div class="faq-body"><p>Sì: lo progetto senza tracciamenti inutili e, quando servono, prepariamo informativa privacy e gestione dei cookie adatte alla tua attività.</p></div>
+          </details>
         </div>
       </div>
     </section>
 
-    <!-- CONTATTI -->
+    <!-- ============ CONTATTI ============ -->
     <section class="section" id="contatti">
       <div class="container">
-        <div class="contact">
+        <div class="contact reveal">
           <div class="contact-copy">
-            <h2>Contatti</h2>
-            <p class="lead">
-              Dimmi settore, obiettivo e tempistiche. Ti rispondo con una proposta semplice.
-            </p>
+            <p class="kicker">Contatti</p>
+            <h2>Pronto a fare<br><span class="grad">colpo online?</span></h2>
+            <p>Raccontami la tua attività: ti rispondo con un'idea concreta e un preventivo gratuito, senza impegno.</p>
 
-            <div class="contact-actions">
-              <a class="btn" href="#" id="whatsappLink2" target="_blank" rel="noopener">WhatsApp</a>
-              <a class="btn btn--ghost" href="mailto:layersulayer@gmail.com">Email</a>
-            </div>
-
-            <div class="contact-mini">
-              <div class="mini-row"><span>📧</span> <span>layersulayer@gmail.com</span></div>
-              <div class="mini-row"><span>📞</span> <span>+39 389 840 3642</span></div>
-              <div class="mini-row"><span>🌐</span> <span>raffaele-web-designer.netlify.app</span></div>
+            <div class="contact-cards">
+              <a class="ccard js-whatsapp" href="https://wa.me/393898403642" target="_blank" rel="noopener">
+                <span class="ccard-ico" aria-hidden="true">💬</span>
+                <span><b>WhatsApp</b><small>La via più rapida</small></span>
+              </a>
+              <a class="ccard js-email" href="mailto:layersulayer@gmail.com">
+                <span class="ccard-ico" aria-hidden="true">✉️</span>
+                <span><b>Email</b><small class="js-email-text">layersulayer@gmail.com</small></span>
+              </a>
             </div>
           </div>
 
-          <form class="form" id="contactForm">
-            <label>
-              Nome
-              <input type="text" name="name" placeholder="Mario Rossi" required>
+          <form class="form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="f-name">Nome</label>
+              <input id="f-name" type="text" name="name" autocomplete="name" placeholder="Mario Rossi" required maxlength="80">
+            </div>
+
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" type="email" name="email" autocomplete="email" placeholder="mario@email.it" required maxlength="120">
+            </div>
+
+            <div class="field">
+              <label for="f-plan">Cosa ti interessa</label>
+              <select id="f-plan" name="plan">
+                <option value="Non so ancora">Non so ancora, consigliami tu</option>
+                <option value="Essenziale">Sito Essenziale</option>
+                <option value="Professionale">Sito Professionale</option>
+                <option value="Modifiche">Modifiche a un sito esistente</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="f-msg">Raccontami la tua attività</label>
+              <textarea id="f-msg" name="message" rows="4" placeholder="Es. Ho un salone a Napoli e vorrei un sito per far prenotare i clienti…" required maxlength="2000"></textarea>
+            </div>
+
+            <label class="check">
+              <input type="checkbox" name="privacy" required>
+              <span>Ho letto l'<a href="privacy.html">informativa privacy</a> e acconsento a essere ricontattato.</span>
             </label>
 
-            <label>
-              Email
-              <input type="email" name="email" placeholder="mario@email.it" required>
-            </label>
-
-            <label>
-              Messaggio
-              <textarea name="message" rows="5" placeholder="Che tipo di sito ti serve?" required></textarea>
-            </label>
-
-            <button class="btn" type="submit">Invia richiesta</button>
-            <p class="tiny" id="formHint">Se non hai un servizio form, si apre la tua app Email (fallback).</p>
+            <button class="btn btn--glow btn--block" type="submit">
+              Invia richiesta
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
           </form>
         </div>
       </div>
     </section>
-
-    <footer class="footer">
-      <div class="container footer-grid">
-        <div class="footer-left">
-          <div class="footer-brand">
-            <img src="assets/img/logo.png" alt="Raffaele Web Designer logo" class="footer-logo">
-            <span>Raffaele Web Designer</span>
-          </div>
-          <p class="tiny">© <span id="year"></span> Tutti i diritti riservati.</p>
-        </div>
-
-        <div class="footer-right">
-          <a href="#top">Torna su ↑</a>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Mobile sticky CTA -->
-    <div class="mobile-cta" aria-hidden="false">
-      <a class="mobile-cta-btn" id="whatsappSticky" href="#" target="_blank" rel="noopener">WhatsApp</a>
-      <a class="mobile-cta-btn ghost" href="#contatti">Preventivo</a>
-    </div>
   </main>
 
-  <script src="assets/js/script.js"></script>
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">R</span>
+          <span class="brand-name">Raffaele<span class="brand-dot">.</span></span>
+        </a>
+        <p class="footer-note">Siti web su commissione per attività locali e professionisti.</p>
+      </div>
+      <nav class="footer-links" aria-label="Link utili">
+        <a href="#servizi">Servizi</a>
+        <a href="#prezzi">Prezzi</a>
+        <a href="#contatti">Contatti</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="condizioni.html">Condizioni</a>
+      </nav>
+    </div>
+    <div class="container footer-legal">
+      <p>© <span id="year">2026</span> Raffaele Ciccarelli · Questo sito non usa cookie di profilazione.</p>
+    </div>
+  </footer>
+
+  <!-- CTA fissa su mobile -->
+  <div class="mobile-cta" id="mobileCta">
+    <a class="mobile-cta-btn js-whatsapp" href="https://wa.me/393898403642" target="_blank" rel="noopener">💬 WhatsApp</a>
+    <a class="mobile-cta-btn mobile-cta-btn--main" href="#contatti">Preventivo gratis</a>
+  </div>
+
+  <script src="assets/js/script.js" defer></script>
 </body>
 </html>
