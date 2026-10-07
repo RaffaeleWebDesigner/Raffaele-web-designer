@@ -11,6 +11,16 @@ const CONFIG = {
 };
 
 // =========================================================
+//  RECENSIONI — solo recensioni VERE dei tuoi clienti.
+//  Finché la lista è vuota la sezione resta nascosta.
+//  Esempio:
+//  { name: "Agostino", business: "Ciccarelli Agostino", url: "https://...", rating: 5,
+//    text: "Sito pronto in pochi giorni, i clienti ora mi scrivono su WhatsApp." },
+// =========================================================
+const REVIEWS = [
+];
+
+// =========================================================
 const $ = (s, root = document) => root.querySelector(s);
 const $$ = (s, root = document) => [...root.querySelectorAll(s)];
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -361,6 +371,76 @@ function setupForm() {
   });
 }
 
+/* ---------- recensioni ---------- */
+function setupReviews() {
+  const link = $(".js-review-link");
+  if (link) link.href = waLink("Ciao Raffaele! Ecco la mia recensione sul sito che mi hai realizzato: ");
+
+  const box = $("#reviews");
+  const list = REVIEWS.filter((r) => r && r.text && r.name);
+  if (!box || !list.length) return;
+  box.hidden = false;
+
+  const stars = $(".reviews-stars", box);
+  const text = $(".reviews-text", box);
+  const author = $(".reviews-author", box);
+  const dots = $(".reviews-dots", box);
+  let i = 0;
+  let timer = null;
+
+  const render = (idx) => {
+    const r = list[idx];
+    const n = Math.max(1, Math.min(5, Math.round(r.rating || 5)));
+    stars.textContent = "★".repeat(n) + "☆".repeat(5 - n);
+    stars.setAttribute("aria-label", `${n} stelle su 5`);
+    text.textContent = r.text;
+    author.textContent = "";
+    const b = document.createElement("b");
+    b.textContent = r.name;
+    author.append(b);
+    if (r.business) {
+      author.append(" · ");
+      if (r.url) {
+        const a = document.createElement("a");
+        a.href = r.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = r.business;
+        author.append(a);
+      } else {
+        author.append(r.business);
+      }
+    }
+    $$(".reviews-dot", dots).forEach((d, k) => d.setAttribute("aria-current", String(k === idx)));
+  };
+
+  const go = (idx) => {
+    if (idx === i) return;
+    i = idx;
+    if (reducedMotion) { render(i); return; }
+    box.classList.add("is-changing");
+    setTimeout(() => { render(i); box.classList.remove("is-changing"); }, 350);
+  };
+
+  if (list.length > 1) {
+    list.forEach((_, k) => {
+      const d = document.createElement("button");
+      d.type = "button"; d.className = "reviews-dot";
+      d.setAttribute("aria-label", `Recensione ${k + 1} di ${list.length}`);
+      d.addEventListener("click", () => { go(k); restart(); });
+      dots.append(d);
+    });
+  }
+
+  const restart = () => {
+    clearInterval(timer);
+    if (list.length < 2 || reducedMotion) return;
+    timer = setInterval(() => { if (!document.hidden) go((i + 1) % list.length); }, 6500);
+  };
+  box.addEventListener("pointerenter", () => clearInterval(timer));
+  box.addEventListener("pointerleave", restart);
+
+  render(0);
+  restart();
+}
+
 /* ---------- avvio ---------- */
 window.__siteReady = true;
 setupContactLinks();
@@ -372,3 +452,4 @@ setupSpotlight();
 setupReveal();
 setupPlanButtons();
 setupForm();
+setupReviews();

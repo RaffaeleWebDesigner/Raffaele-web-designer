@@ -17,7 +17,7 @@
   <link rel="canonical" href="https://raffaelewebdesigner.github.io/Raffaele-web-designer/" />
 
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="assets/css/styles.css?v=3" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=4" />
   <script>document.documentElement.classList.replace("no-js", "js");setTimeout(function(){if(!window.__siteReady)document.documentElement.classList.add("reveal-off")},3000);</script>
 </head>
 
@@ -282,6 +282,15 @@
             </div>
           </a>
         </div>
+
+        <!-- Recensioni: si mostrano solo se ce ne sono in REVIEWS (assets/js/script.js) -->
+        <figure class="reviews reveal" id="reviews" hidden>
+          <div class="reviews-stars" aria-hidden="true"></div>
+          <blockquote class="reviews-text" aria-live="polite"></blockquote>
+          <figcaption class="reviews-author"></figcaption>
+          <div class="reviews-dots" role="group" aria-label="Scegli recensione"></div>
+        </figure>
+        <p class="reviews-cta">Ti ho realizzato un sito? <a class="js-review-link" href="https://wa.me/393898403642" target="_blank" rel="noopener">Lascia una recensione</a></p>
       </div>
     </section>
 
@@ -513,6 +522,6 @@
     <a class="mobile-cta-btn mobile-cta-btn--main" href="#contatti">Preventivo gratis</a>
   </div>
 
-  <script src="assets/js/script.js?v=3" defer></script>
+  <script src="assets/js/script.js?v=4" defer></script>
 </body>
 </html>
