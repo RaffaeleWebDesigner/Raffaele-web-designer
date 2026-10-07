@@ -362,6 +362,7 @@ function setupForm() {
 }
 
 /* ---------- avvio ---------- */
+window.__siteReady = true;
 setupContactLinks();
 setupScroll();
 setupMenu();

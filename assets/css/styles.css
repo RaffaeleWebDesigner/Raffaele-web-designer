@@ -240,6 +240,7 @@ p { margin: 0; }
   white-space: nowrap;
 }
 .rotator-word.is-active { opacity: 1; transform: none; filter: none; }
+.reveal-off .rotator-word:first-child { opacity: 1; transform: none; filter: none; }
 .rotator-word.is-leaving { opacity: 0; transform: translateY(-0.45em); filter: blur(6px); }
 .no-js .rotator-word:not(:first-child) { display: none; }
 
@@ -651,7 +652,7 @@ p { margin: 0; }
 
 /* ---------- reveal ---------- */
 .js .reveal { opacity: 0; translate: 0 28px; transition: opacity 0.9s var(--ease), translate 0.9s var(--ease); }
-.js .reveal.is-in { opacity: 1; translate: 0 0; }
+.js .reveal.is-in, .reveal-off .reveal { opacity: 1; translate: 0 0; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 1040px) {
