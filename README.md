@@ -35,8 +35,3 @@ python -m http.server 8080
 
 Funziona su qualsiasi hosting statico (GitHub Pages, Netlify, Cloudflare Pages).
 Su GitHub Pages: Settings → Pages → Branch `main` → cartella `/ (root)`.
-
-## Altri progetti nel repository
-
-- `quanto-mi-conosci/`: party game multiplayer (Node + Socket.IO). Ha un README dedicato con le istruzioni
-  di avvio e di deploy (non è un sito statico: non viene pubblicato da GitHub Pages).
